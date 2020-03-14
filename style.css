@@ -1,0 +1,44 @@
+.container{
+    background: white;
+    margin: 0 auto;
+    padding: 3%;
+    width: 90%;
+}
+/* Just playing with the font stuff here of the p tag class*/
+/* shit option a is block comment btw*/
+p {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+/* specify the type of display: flex
+Also specify the margin (for whatever reason these are the top and bottom margins
+*/
+.projects_in_row_1{
+    display: flex;
+    margin: 25px 0;
+
+    
+}
+.projects_in_row_2{
+    display: flex;
+    margin: 25px 0;
+
+}
+/* here are all of the images I'm using and their size ratio's (width/height) */
+.img1{flex: 1.5;}
+.img2{flex: 1.5;}
+.img3{flex: 2.1667;}
+.img4{flex: 1.983;}
+
+/* This here gives us the margin to the right of each of the images*/
+.projects_in_row_1> div:not(:last-child) {
+    margin-right: 2%;
+}
+.projects_in_row_2> div:not(:last-child) {
+    margin-right: 2%;
+}
