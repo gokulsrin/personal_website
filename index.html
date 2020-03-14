@@ -6,7 +6,16 @@
         <link rel = "stylesheet"
         type = "text/css"
         href = "style.css" />
-    </head>
+        <!-- Adding javascript -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }   
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </head> 
 
     <main>
         <div class = "container">
@@ -14,12 +23,18 @@
             <p>Computer Science <br> Freshman @ Dartmouth College
             </p>
             <!-- creating the navigation menu -->
-            <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html"><div>Home</div></a>
                 <a href="me.html"><div>About Me</div></a>
                 <a href="expirience.html"><div>Expirience</div></a>
                 <a href="projects.html"><div>Projects</div></a>
-            </nav>
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()">Menu</span>
+
+            </div>
             <!-- first row of images for the projects I've done -->
             <div class="projects_in_row_1">
                 <!-- this is the ai image for markov model section-->
