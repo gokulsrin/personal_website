@@ -4,14 +4,13 @@
     padding: 3%;
     width: 90%;
 }
-/* Just playing with the font stuff here of the p tag class*/
-/* shit option a is block comment btw*/
-p {
-    font-size: 50px;
-    font-family: sans-serif;
-    /* I want to center the text */
-    text-align: center;
+.myinfo{
+  font-size: 50px;
+  font-family: sans-serif;
+  /* I want to center the text */
+  text-align: center;
 }
+
 img {
     width: 100%;
     height: auto;
@@ -23,8 +22,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
 .projects_in_row_1{
     display: flex;
     margin: 25px 0;
-
-    
+    padding-top: 30px;
 }
 .projects_in_row_2{
     display: flex;
@@ -100,7 +98,80 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     /* width and height should refer to image */
     width: 40px;
     height: auto;
-    text-align: right;
-    padding-top: 0px;
+  }
+   /* When you hover mouse over the menu icon, change their color */
+   .menubutton:hover {
+    filter: invert(40%);
+  }
+
+  /* This is the css for the rotating text */
+  .rotatingText {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
   }
   
+  .rotatingTextAdjective {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    opacity: 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40px;
+  }
+  
+  .rotatingTextAdjective:nth-of-type(1) {
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+  }
+  
+  .rotatingTextAdjective:nth-of-type(2) {
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-delay: 1.75s;
+  }
+  
+  .rotatingTextAdjective:nth-of-type(3) {
+    animation-name: rotate-last;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotate {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+    
+    20%, 80% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    100% {
+      opacity: 0;
+      transform: translate3d(0, -25px, 0);
+    }
+  }
+  
+  @keyframes rotate-last {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+    
+    50%, 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
