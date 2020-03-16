@@ -19,6 +19,10 @@
 
     <main>
         <div class = "container">
+            <!-- Use any element to open the sidenav; this is the menu button -->
+            <div class = "menubutton">
+                <span style="font-size:20px;cursor:pointer; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; align-self: right;" onclick="openNav()">Menu</span>
+            </div>
             <!-- this is going to be the center part of the home page with some of my information -->
             <p>Computer Science <br> Freshman @ Dartmouth College
             </p>
@@ -29,12 +33,36 @@
                 <a href="me.html"><div>About Me</div></a>
                 <a href="expirience.html"><div>Expirience</div></a>
                 <a href="projects.html"><div>Projects</div></a>
-              </div>
-              
-              <!-- Use any element to open the sidenav -->
-              <span onclick="openNav()">Menu</span>
-
             </div>
+            
+            <!-- This is basically going to be a section containing all of the information on the webpage that will be rescaled when nav is opened -->
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+            <div id="main">
+                 <!-- first row of images for the projects I've done -->
+                <div class="projects_in_row_1">
+                    <!-- this is the ai image for markov model section-->
+                    <div class = "img1">
+                        <img src = "https://images.idgesg.net/images/article/2018/01/binary_neural_network_artificial_intelligence_machine_learning_thinkstock_636754212_tinted-100747913-large.jpg" alt="Parts of Speech Tagger">
+                    </div>
+                    <!-- this is the image for the collaborative graphical editor  -->
+                    <div class = "img2">
+                        <img src = "https://mymodernmet.com/wp/wp-content/uploads/2019/01/acrylic-painting-techniques-1.jpg" alt = "Collaborative Graphical Editor">
+                    </div>
+                </div>
+
+                <!-- second row  of images for the projects I've done -->
+                <div class = "projects_in_row_2">
+                    <!-- this is the file compressor using huffman encoding-->
+                    <div class = "img3">
+                        <img src = "https://www.howtogeek.com/thumbcache/2/200/9a96d64dac98a7255feb6bef88e5b192/wp-content/uploads/2014/10/compressed-folder.png" alt="File Compression and Decompression: Huffman Encoding">
+                    </div>
+                    <!-- this is the tweepy sentiment analysis tool  -->
+                    <div class = "img4">
+                        <img src = "https://miro.medium.com/max/5404/1*qsZDAfLmgIDqPOSyqZ-P3Q.png" alt = "Twitter Sentiment Analysis Tool">
+                    </div>
+                </div>
+            </div>
+
             <!-- first row of images for the projects I've done -->
             <div class="projects_in_row_1">
                 <!-- this is the ai image for markov model section-->

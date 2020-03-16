@@ -9,6 +9,8 @@
 p {
     font-size: 50px;
     font-family: sans-serif;
+    /* I want to center the text */
+    text-align: center;
 }
 img {
     width: 100%;
@@ -54,7 +56,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     left: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 50px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
   
@@ -93,3 +95,9 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  /* This is the formatting for the location of the menu button on the screen */
+  .menubutton{
+    text-align: right;
+    padding-top: 0px;
+  }
+  
