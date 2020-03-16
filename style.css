@@ -95,8 +95,11 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  /* This is the formatting for the location of the menu button on the screen */
+  /* This is the formatting for the location of the menu button on the screen and the menu icon */
   .menubutton{
+    /* width and height should refer to image */
+    width: 40px;
+    height: auto;
     text-align: right;
     padding-top: 0px;
   }
