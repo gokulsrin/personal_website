@@ -1,3 +1,4 @@
+/* STYLE FOR INDEX.HTML */
 .container{
     background: white;
     margin: 0 auto;
@@ -187,7 +188,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   .letter {
     display: inline-block;
     position: relative;
-    float: left;
+    /* float: left; */
     -webkit-transform: translateZ(25px);
             transform: translateZ(25px);
     -webkit-transform-origin: 50% 50% 25px;
@@ -244,4 +245,28 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     bottom: 5px;
   }
   
+
+  /* STYLE FOR PROJECTS.HTML */
+
+  .projectsContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background:white; /* Just to visualize the extent */
+  }
+
+  .projectsTitle{
+    display: inline-flexbox;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+
  

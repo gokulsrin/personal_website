@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <!-- this is the project section for this website -->
 <html>
-<head>
-    <link rel = "stylesheet"
-    type = "text/css"
-    href = "style.css" />
-</head>
-<main>
-    <h1>
-       Projects
-    </h1>
-    <p>
-        My name is Gokul Srinivasan and I am constantly working to expand this webpage...
-    </p>
-</main>
+    <head>
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "style.css" />
+        <script>
+             /* script for side nav open and close */
+             function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }   
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </head>
+    <main>
+        <div class="projectsContainer">
+            <div class = "menubutton">
+                <span style="font-size:20px;cursor:pointer; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; align-self: right;" onclick="openNav()"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt = "Menu Button"></span>
+            </div>
+            <!-- creating the panda icon -->
+            <div class = "pandaIcon">
+                <img src = "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/2796048/1162/776/m1/fpnw/wm0/1-.jpg?1496515548&s=9ac5a58ce97387782c1de38b3a413c81" alt = "panda icon" class = "pandaIcon">
+            </div>
+            <!-- creating the navigation menu -->
+             <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"><div>Home</div></a>
+                <a href="me.html"><div>About Me</div></a>
+                <a href="expirience.html"><div>Expirience</div></a>
+                <a href="projects.html"><div>Projects</div></a>
+            </div>  
+            <div class = "projectsTitle">
+                Projects
+            </div>
+            <p>
+                My name is Gokul Srinivasan and I am constantly working to expand this webpage...
+            </p>
+        </div>
+    </main>
 </html>
