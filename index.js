@@ -56,6 +56,11 @@ function splitLetters(word) {
         letter.innerHTML = content.charAt(i);
         //add the letter to word 
         word.appendChild(letter);
+        //check if the letter is a space; needs to be dealt with different
+        if(letter.innerHTML == " "){
+            //space representation
+            letter.innerHTML = "&nbsp;"
+        }
         //push the letter to the letters array
         letters.push(letter);
     }
