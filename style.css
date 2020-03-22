@@ -345,6 +345,12 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     text-align: center;
     font-weight: lighter;
   }
+  /* arbitrary box */
+  .scrolltext {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+  }
 
   
 

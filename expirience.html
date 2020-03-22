@@ -5,6 +5,9 @@
     <link rel = "stylesheet"
     type = "text/css"
     href = "style.css" />
+    <!-- This is linking to the library with scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <main>
     <div class = "container">
@@ -28,15 +31,21 @@
             <a href="projects.html"><div>Projects</div></a>
         </div>          
     </div>
-    <h1>
-       Experience
-    </h1>
+    <!-- expirience heading -->
+    <h1 data-aos="fade-up" style="text-align: center;">Experience</h1>
+    <!-- adding image section -->
     <p>
         My name is Gokul Srinivasan and I am constantly working to expand this webpage...
     </p>
+    <!-- initialize the scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>   
 </main>
 <footer>
     <p>@ Gokul Srinivasan 2020</p>
 </footer>
 <script src="./index.js"></script>
+<script src = "./expirience.js"></script>
 </html>
