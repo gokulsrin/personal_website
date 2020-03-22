@@ -319,7 +319,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   .parallax { 
     margin-top: 30px;
     /* The image used */
-    background-image: url("pictureofme.JPG");
+    background-image: url("image_lib/pictureofme.JPG");
   
     /* Set a specific height */
     height: 800px; 
