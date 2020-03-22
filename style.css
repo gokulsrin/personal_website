@@ -165,7 +165,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
 
   .text {
     position: absolute;
-    width: 450px;
+    width: 800px;
     left: 50%;
     margin-left: -225px;
     height: 40px;
@@ -174,14 +174,14 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   }
 
   .rotatingWords {
-    display: inline-block;
-    vertical-align: top;
+    display: inline-box;
+    vertical-align: middle;
     margin: 0;
   }
 
   .word {
     position: absolute;
-    width: 220px;
+    width: 100%;
     opacity: 0;
   }
 
