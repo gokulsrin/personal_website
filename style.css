@@ -323,7 +323,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   
     /* Set a specific height */
     height: 800px; 
-  
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 50% 36%;
