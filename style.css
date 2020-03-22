@@ -30,10 +30,6 @@
   font-size: 20px;
   text-align: center;
 }
-/* for the bars underneath rotating text */
-.bar{
-  text-decoration-color: yellow;
-}
 
 img {
     width: 100%;
@@ -169,14 +165,44 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     filter: invert(40%);
   }
 
-  /* panda icon on the top right hand of screen*/
-  .pandaIcon{
+  /* qr code icon on the top right hand of screen*/
+  .qrIcon{
     position: absolute;
     top: 13px;
-    right: 0px;
-    width: 200px;
-    height: auto;
+    right: 10px;
+    width: 100px;
+    /* height: auto; */
   }
+
+  /* qr code overlay */
+  .qrOverlay{
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: black;
+  }
+  
+  /* qr code overlay text */
+  .qrOverlayText{
+    color: whitesmoke;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* hover function */
+  .qrIcon:hover .qrOverlay{
+    opacity: 1;
+  }
+
   /* This is the css for the rotating text */
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
