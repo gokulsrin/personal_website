@@ -9,9 +9,7 @@
   display: inline-flexbox;
   font-size: 50px;
   font-family: sans-serif;
-  /* I want to center the text */
-  /* text-align: center; */
-  /* create margin and padding */
+ 
   padding-bottom: 50px;
   padding-top: 10px;
   width: 1000px;
@@ -40,10 +38,8 @@ img {
 Also specify the margin (for whatever reason these are the top and bottom margins
 */
 .projects_in_row_1{
-    margin-top: 10px;
     display: flex;
     margin: 25px 0;
-    padding-top: 30px;
 }
 .projects_in_row_2{
     display: flex;
@@ -70,6 +66,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   transition: .5s ease;
   background-color: #008CBA;
 }
+/* this is the text that shows up on the overlay */
 .projectOverlayText{
   color: white;
   font-size: 20px;
@@ -80,6 +77,24 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+/* project overlay cool text graphic */
+/* should be a curved rectangle */
+.projectOverlayGraphic{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  border-radius: 25px;
+  background: black;
+  width: 80px;
+  height: 30px; 
+}
+/* text inside of the cool rectangle */
+.projectOverlayGraphicText{
+  position: absolute;
+  font-size: 15px;
+  left: 30%;
+  bottom: 25%;
 }
 
 /* all of the over hoverlay stuff */
@@ -123,7 +138,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -298,6 +313,38 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     text-align: center;
     bottom: 5px;
   }
+
+  /* STYLE FOR ABOUTME.HTML */
+
+  .parallax { 
+    margin-top: 30px;
+    /* The image used */
+    background-image: url("pictureofme.JPG");
+  
+    /* Set a specific height */
+    height: 800px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 36%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .aboutmeheading{
+    padding-top: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .aboutmetext{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
   
 
   /* STYLE FOR PROJECTS.HTML */
