@@ -345,11 +345,32 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     text-align: center;
     font-weight: lighter;
   }
+
+  /* CSS FOR EXPIRIENCE.HTML */
   /* arbitrary box */
   .scrolltext {
     font-size: 20px;
     font-family: sans-serif;
     text-align: center;
+  }
+  .expirienceImage{
+    display: flexbox;
+    left: 0;
+    right: 50%;
+    height: 500px;
+    width: auto;
+  }
+  .expirienceImageText{
+    margin-top: 100px;
+    position: absolute;
+    left: 50%;
+    right: 100%;
+    width: 500px;
+    height: auto;
+    /* text stuff */
+    text-align: left;
+    font-size: 15px;
+    font-family: sans-serif;
   }
 
   
