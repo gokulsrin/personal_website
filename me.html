@@ -5,6 +5,9 @@
     <link rel = "stylesheet"
     type = "text/css"
     href = "style.css" />
+     <!-- This is linking to the library with scroll animations -->
+    <!-- I would like to credit github user michalsnik (username: michalsnik) @ https://michalsnik.github.io/aos/ for the tools to create a simple and fully funcitonal scroll animation mechanism. Without this users generous supply of code, I would have had to do this by hand, and that would have been tedious -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <main>
     <div class = "container">
@@ -28,19 +31,24 @@
             <a href="projects.html"><div>Projects</div></a>
         </div> 
         <div class = "parallax"></div>
-        <div class = "aboutmeheading">
-             About Me 
-        </div>
-        <div class = "aboutmetext">
-            The big question: who am I? 
-            <p></p>
-            A slave to my own curiosity. 
-            <p></p>
+        <h1 data-aos="fade-up" style="text-align: center; font-size: 60px;">About Me </h1>
+        <hr data-aos="fade-up" style="width: 30%;">
+        <div class = "aboutmetext" data-aos="fade-up">
+            <p data-aos="fade-up">
+                The big question: who am I? 
+            </p>
+             
+            <p data-aos="fade-up">
+                A slave to my own curiosity.
+            </p>
 
-            So far, my academic and professional pursuits have been extremely varied-- a seemingly disjointed journey spanning across initiatives in Disaster Preparedness, research in bioinformatics, study in math and science, and endless inquiry on philosophical, political, and anthropological topics. But, despite the apparent dissonance, an underlying curiosity binds all of these interests together: my obsession with humans, and how the world around us affects our lives. I'm lucky to say that in all of the roles I have assumed, I have been able to satisfy my passion in investigating the human condition as it relates to medicine, economics, politics, and technology. 
-            <p></p>
-
-            I am driven by a burning curiosity to understand the world we live in, to understand the limits of the human condition, and to experience the thousands of flavors of life. I am motivated by the deep satisfaction that comes from building creative solutions to novel problems, and optimizing programs to maximize their human impact.         </div>         
+            <p data-aos="fade-up">
+                So far, my academic and professional pursuits have been extremely varied-- a seemingly disjointed journey spanning across initiatives in Disaster Preparedness, research in bioinformatics, study in math and science, and endless inquiry on philosophical, political, and anthropological topics. But, despite the apparent dissonance, an underlying curiosity binds all of these interests together: my obsession with humans, and how the world around us affects our lives. I'm lucky to say that in all of the roles I have assumed, I have been able to satisfy my passion in investigating the human condition as it relates to medicine, economics, politics, and technology. 
+            </p>
+            <p data-aos="fade-up">
+                I am driven by a burning curiosity to understand the world we live in, to understand the limits of the human condition, and to experience the thousands of flavors of life. I am motivated by the deep satisfaction that comes from building creative solutions to novel problems, and optimizing programs to maximize their human impact.             
+            </p>
+        </div>     
     </div>
 </main>
 <footer>
@@ -48,4 +56,9 @@
 </footer>
 <!-- linking the css -->
 <script src="./index.js"></script>
+ <!-- initialize the scroll script -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>   
 </html>
