@@ -6,6 +6,7 @@
     type = "text/css"
     href = "style.css" />
     <!-- This is linking to the library with scroll animations -->
+    <!-- I would like to credit github user michalsnik (username: michalsnik) @ https://michalsnik.github.io/aos/ for the tools to create a simple and fully funcitonal scroll animation mechanism. Without this users generous supply of code, I would have had to do this by hand, and that would have been tedious -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
@@ -29,19 +30,71 @@
             <a href="me.html"><div>About Me</div></a>
             <a href="expirience.html"><div>Expirience</div></a>
             <a href="projects.html"><div>Projects</div></a>
-        </div>          
+        </div>        
+
         <!-- expirience heading -->
         <h1 data-aos="fade-up" style="text-align: center;">Experience</h1>
-       
+
+        <!-- little horizontal bar -->
+        <hr style="size: 4px; width: 500px; margin-top: -40px;" data-aos="fade-up">
+
+        <!-- Image 1 and the corresponding text for image 1 -->
         <!-- adding the text to the image -->
         <div class = "expirienceImageText" data-aos="fade-up">
-            Working under the guidance of Dr. Eden and Dr. Nelson, as well as the OHSU Department of Medical Informatics and Clinical Epidemiology, I leveraged FHIR tools to populate MammoScreen (a breast cancer screening tool) with critical patient data.
+            <h3>Research Assistant</h3>
+            Assistant at the Cavanagh-Tse joint lab investigating the nature of consciousness through visual stimulus. 
             <p></p>
-            Over a period of 10 weeks, I had the privilege of taking a project feature from conception to completion. Using my knowledge of data structures, and general familiarity with JavaScript, I was able to create an information retrieval and storage tool, allowing MammoScreen to pull and push relevant patient data. Specifically, I was able to use SMART on FHIR, a tool created by the Boston Children's Hospital, to interact with a Cerner EHR platform.        </div>
+            Thus far, I have been tasked with the coding of, and implementation of pupilatory interpolation algorithms in MATLAB and Python. More generally, I have worked in Python and MATLAB to code help code Psychophysics experiments and EEG/MRI data analysis algorithms. By viewing the results of these experiments, we can better understand the nature and location of consciousness in the brain.
+            <h3>Tools Utilized:</h3>
+            Working under the guidance of Dr. Eden and Dr. Nelson, as well as the OHSU Department of Medical Informatics and Clinical Epidemiology, I leveraged FHIR tools to populate MammoScreen (a breast cancer screening tool) with critical patient data.
+        </div>
+
          <!-- adding image section -->
          <div class = "expirienceImage">
-            <img src="image_lib/OHSU_logo_hero.jpeg" class="expirienceImage" data-aos="fade-right">
+             <a href="https://pbs.dartmouth.edu/people/peter-ulric-tse">
+                <img src="https://www.underconsideration.com/brandnew/archives/dartmouth_dpine.png" class="expirienceImage" data-aos="fade-right" style="width: 40%; height: auto; margin-top: 120px;" >
+             </a>
         </div>
+        <hr style="size: 4px;" data-aos="fade-up">
+
+
+
+        <!-- Image 2 and corresponding text -->
+        <div class = "expirienceImageText" data-aos="fade-up">
+            <h3>Bioinformatics and Clinical Health Intern</h3>
+            Working under the guidance of Dr. Eden and Dr. Nelson, as well as the OHSU Department of Medical Informatics and Clinical Epidemiology, I leveraged FHIR tools to populate MammoScreen (a breast cancer screening tool) with critical patient data.
+            <p></p>
+            Over a period of 10 weeks, I had the privilege of taking a project feature from conception to completion. Using my knowledge of data structures, and general familiarity with JavaScript, I was able to create an information retrieval and storage tool, allowing MammoScreen to pull and push relevant patient data. Specifically, I was able to use SMART on FHIR, a tool created by the Boston Children's Hospital, to interact with a Cerner EHR platform.
+            <h3>Tools Utilized:</h3>
+            Working under the guidance of Dr. Eden and Dr. Nelson, as well as the OHSU Department of Medical Informatics and Clinical Epidemiology, I leveraged FHIR tools to populate MammoScreen (a breast cancer screening tool) with critical patient data.
+        </div>
+
+        <div class = "expirienceImage">
+            <a href = https://www.ohsu.edu/people/karen-b-eden-phd>
+                <img src="image_lib/OHSU_logo_hero.jpeg" class="expirienceImage" data-aos="fade-right">
+            </a>
+        </div>
+         <!-- little horizontal bar -->
+         <hr style="size: 4px;" data-aos="fade-up">
+
+
+
+        <!-- Image 3 and corresponding text -->
+        <div class = "expirienceImageText" data-aos="fade-up">
+            <h3>FEMA Region 10 Youth Representative</h3>
+            As a council member on the FEMA Region 10 Youth Preparedness Council, I worked to create innovative solutions to preparedness issues: connecting the old to the young, the state to the local, and private industries to public services. 
+            <p></p>
+            During my tenure, I was granted the privilege of speaking on Oregon Public Broadcasting about disaster preparedness and creating a culture of preparedness. I was able to work with the Red Cross, Meals on Wheels, and FEMA Region 10 to create a way to distribute preparedness products to senior citizens.
+            <h3>Tools Utilized:</h3>
+            Working under the guidance of Dr. Eden and Dr. Nelson, as well as the OHSU Department of Medical Informatics and Clinical Epidemiology, I leveraged FHIR tools to populate MammoScreen (a breast cancer screening tool) with critical patient data.
+        </div>
+        
+        <div class = "expirienceImage">
+            <a href="https://www.fema.gov/news-release/2018/08/29/fema-selects-two-oregon-teens-region-10-youth-preparedness-council">
+                <img src="https://www.fema.gov/media-library-data/1571940450619-b95f7d8df0d9d3c0c1fb43841702e6a3/fema-logo-blue_medium.png" class="expirienceImage" data-aos="fade-right" style="width: 40%; height: auto;">
+            </a>
+        </div>
+
     </div>
     
 
