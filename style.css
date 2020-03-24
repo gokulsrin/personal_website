@@ -378,7 +378,7 @@ Also specify the margin (for whatever reason these are the top and bottom margin
 
   /* STYLE FOR PROJECTS.HTML */
 
-  
+  /* adapted from CSS3 tutorials */
   /* all the css for cool button and animation */
   .buttonContainer{
     position: relative;  
@@ -441,16 +441,3 @@ Also specify the margin (for whatever reason these are the top and bottom margin
     display: none;
     opacity: 1;
   }
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.javaColumn {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.javaRow::after {
-  content: "";
-  clear: both;
-  display: table;
-}
