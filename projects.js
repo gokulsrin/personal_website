@@ -2,11 +2,29 @@ AOS.init({
     duration: 1200,
   })
 
-/* the logic for the sort */
+function toggleAll(){
+    /* put simply, I need to make all other elements not visible while making the all visible */
 
-/* first want to see where the user is clicking */
-button.onclick = function(event){
-    
+    /* set the display setting of the other (python and java) to none */
+    document.getElementById("pythonProjects").style.display = 'none';
+    document.getElementById("javaProjects").style.display = 'none';
+
+    /* flip the display setting*/
+    document.getElementById("allProjects").style.display = 'block';
 }
-/* I want an array with all of the elements (pictures titled this) */
-var element_array = document.getElementsByClassName("project_image")
+
+function toggleJava(){
+
+    document.getElementById("pythonProjects").style.display = 'none';
+    document.getElementById("allProjects").style.display = 'none';
+
+    document.getElementById("javaProjects").style.display = 'block';
+}
+
+function togglePython(){
+
+    document.getElementById("javaProjects").style.display = 'none';
+    document.getElementById("allProjects").style.display = 'none';
+
+    document.getElementById("pythonProjects").style.display = 'block';
+}

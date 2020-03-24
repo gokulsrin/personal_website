@@ -38,17 +38,131 @@
             </div>
 
             <!-- start creating the buttons -->
-            <div class = "buttonContainer">
-                <button id = "All"> All</button>
-                <button id = "Java"> Java</button>
-                <button id = "Python"> Python</button>
+            <div class = "buttonContainer" data-aos="fade-up">
+                <button id = "All" onclick = "toggleAll()" class = "button" > <span> All</span></button>
+                <button id = "Java" onclick="toggleJava()" class = "button">  <span> Java</span></button>
+                <button id = "Python" onclick="togglePython()" class = "button"> <span> Python</span></button>
             </div>
+
+            <!-- Start organizing the classes -->
+            <div id="allProjects">
+                <!-- row 1 -->
+                <div class="projects_in_row_1">
+                    <!-- this is the ai image for markov model section-->
+                    <div class = "img1">
+                        <img src = "https://images.idgesg.net/images/article/2018/01/binary_neural_network_artificial_intelligence_machine_learning_thinkstock_636754212_tinted-100747913-large.jpg" alt="Parts of Speech Tagger" >
+                            <div class = "projectOverlay">
+                                <div class ="projectOverlayText"> Hidden Markov Model</div>
+                                <div class = "projectOverlayGraphic"> 
+                                    <div class = "projectOverlayGraphicText">
+                                        <span style = "color:white">Java</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class = "img2">
+                        <img src = "https://mymodernmet.com/wp/wp-content/uploads/2019/01/acrylic-painting-techniques-1.jpg" alt = "Collaborative Graphical Editor">
+                        <div class = "projectOverlay">
+                            <div class = "projectOverlayText">Multi-paradigm Collaborative Graphical Editor</div>
+                            <div class = "projectOverlayGraphic"> 
+                                <div class = "projectOverlayGraphicText">
+                                    <span style = "color:white">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class = "projects_in_row_2">
+                    <!-- this is the file compressor using huffman encoding-->
+                    <div class = "img3">
+                        <img src = "https://www.howtogeek.com/thumbcache/2/200/9a96d64dac98a7255feb6bef88e5b192/wp-content/uploads/2014/10/compressed-folder.png" alt="File Compression and Decompression: Huffman Encoding">
+                        <div class = "projectOverlay">
+                            <div class = "projectOverlayText">Huffman Encoding</div>
+                            <div class = "projectOverlayGraphic"> 
+                                <div class = "projectOverlayGraphicText">
+                                    <span style = "color:white">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- this is the tweepy sentiment analysis tool  -->
+                    <div class = "img4">
+                        <img src = "https://miro.medium.com/max/5404/1*qsZDAfLmgIDqPOSyqZ-P3Q.png" alt = "Twitter Sentiment Analysis Tool">
+                        <div class = "projectOverlay">
+                            <div class = "projectOverlayText">Sentiment Analysis</div>
+                            <div class = "projectOverlayGraphic"> 
+                                <div class = "projectOverlayGraphicText">
+                                    <span style = "color:white">Python </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="javaProjects">
+                <div class="projects_in_row_1">
+                    <!-- this is the ai image for markov model section-->
+                    <div class = "img1">
+                        <img src = "https://images.idgesg.net/images/article/2018/01/binary_neural_network_artificial_intelligence_machine_learning_thinkstock_636754212_tinted-100747913-large.jpg" alt="Parts of Speech Tagger" >
+                            <div class = "projectOverlay">
+                                <div class ="projectOverlayText"> Hidden Markov Model</div>
+                                <div class = "projectOverlayGraphic"> 
+                                    <div class = "projectOverlayGraphicText">
+                                        <span style = "color:white">Java</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class = "img2">
+                        <img src = "https://mymodernmet.com/wp/wp-content/uploads/2019/01/acrylic-painting-techniques-1.jpg" alt = "Collaborative Graphical Editor">
+                        <div class = "projectOverlay">
+                            <div class = "projectOverlayText">Multi-paradigm Collaborative Graphical Editor</div>
+                            <div class = "projectOverlayGraphic"> 
+                                <div class = "projectOverlayGraphicText">
+                                    <span style = "color:white">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "img3">
+                    <img src = "https://www.howtogeek.com/thumbcache/2/200/9a96d64dac98a7255feb6bef88e5b192/wp-content/uploads/2014/10/compressed-folder.png" alt="File Compression and Decompression: Huffman Encoding">
+                    <div class = "projectOverlay">
+                        <div class = "projectOverlayText">Huffman Encoding</div>
+                        <div class = "projectOverlayGraphic"> 
+                            <div class = "projectOverlayGraphicText">
+                                <span style = "color:white">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+
+            <div id="pythonProjects">
+                <div class="projects_in_row_1">
+                    <!-- this is the ai image for markov model section-->
+                    <div class = "img4" style="padding: 50px;">
+                        <img src = "https://miro.medium.com/max/5404/1*qsZDAfLmgIDqPOSyqZ-P3Q.png" alt = "Twitter Sentiment Analysis Tool">
+                        <div class = "projectOverlay">
+                            <div class = "projectOverlayText">Sentiment Analysis</div>
+                            <div class = "projectOverlayGraphic"> 
+                                <div class = "projectOverlayGraphicText">
+                                    <span style = "color:white">Python </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+        </div>
     </main>
     <!-- linking the css -->
+    <script src="./projects.js"></script>
     <script src="./index.js"></script>
     <!-- initialize the scroll script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>   
 </html>
