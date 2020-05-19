@@ -4,4 +4,4 @@ This repo will track and detail the progress I make in my web development journe
 
 ### Usage Information
 
-To access the website, please visit the enviorments section of the GitHub page. 
+To access the website, please visit the environment section of the GitHub page. 
